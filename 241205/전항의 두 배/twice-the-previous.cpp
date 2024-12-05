@@ -2,8 +2,9 @@
 using namespace std;
 
 int main() {
-    int a[104];
-    a[0] = 2, a[1] = 3;
+    int a[104], b, c;
+    cin >> b >> c;
+    a[0] = b, a[1] = c;
 
     for (int i = 2; i < 10; i++)
     {

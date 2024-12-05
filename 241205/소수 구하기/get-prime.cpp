@@ -18,7 +18,7 @@ int main() {
                 flag = true;
             }
         }
-        if (flag)
+        if (!flag)
         {
             cout << i << ' ';
         }

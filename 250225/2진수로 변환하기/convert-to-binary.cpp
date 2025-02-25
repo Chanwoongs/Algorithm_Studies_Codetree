@@ -11,6 +11,12 @@ int main()
 {
     cin >> n;
 
+    if (n == 0)
+    {
+        cout << 0;
+        return 0;
+    }
+
     while (n > 0)
     {
         if (n % 2 == 0)

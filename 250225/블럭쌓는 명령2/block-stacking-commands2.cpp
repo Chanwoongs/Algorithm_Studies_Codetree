@@ -9,14 +9,14 @@ vector<int> v;
 
 int main() {
     cin >> N >> K;
-    v.resize(N, 0);
+    v.resize(N + 1, 0);
 
     for (int i = 0; i < K; i++) {
         cin >> A[i] >> B[i];
     }
 
     // Write your code here!
-    for (int i = 0; i < K; i++)
+    for (int i = 1; i <= K; i++)
     {
         for (int j = A[i]; j < B[i] + 1; j++)
         {

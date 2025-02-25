@@ -16,7 +16,7 @@ int main() {
     }
 
     // Write your code here!
-    for (int i = 0; i < v.size(); i++)
+    for (int i = 0; i < k; i++)
     {
         for (int j = A[i]; j < B[i] + 1; j++)
         {

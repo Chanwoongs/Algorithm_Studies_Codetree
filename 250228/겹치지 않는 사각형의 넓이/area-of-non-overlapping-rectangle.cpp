@@ -4,9 +4,9 @@
 
 using namespace std;
 
-const int offset = 2000;
+const int offset = 1000;
 int x1, y1, x2, y2, res = 0;
-int arr[offset + 4][offset + 4];
+int arr[offset * 2 + 4][offset * 2 + 4];
 
 int main()
 {

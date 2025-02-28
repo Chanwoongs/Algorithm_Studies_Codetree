@@ -17,7 +17,7 @@ int main() {
         x2[i] += offset;
     }
 
-    memset(arr, 100, sizeof(int));
+    memset(arr, 200, sizeof(int));
 
     // Please write your code here.
     for (int i = 0; i < n; i++)

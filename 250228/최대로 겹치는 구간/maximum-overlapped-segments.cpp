@@ -3,6 +3,7 @@
 
 using namespace std;
 
+const int offset = 100;
 int n, m = 0;;
 int x1[100], x2[100], arr[100];
 
@@ -11,6 +12,9 @@ int main() {
 
     for (int i = 0; i < n; i++) {
         cin >> x1[i] >> x2[i];
+
+        x1[i] += offset;
+        x2[i] += offset;
     }
 
     memset(arr, 100, sizeof(int));

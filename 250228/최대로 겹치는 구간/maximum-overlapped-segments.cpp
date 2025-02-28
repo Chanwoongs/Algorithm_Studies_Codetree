@@ -5,7 +5,7 @@ using namespace std;
 
 const int offset = 100;
 int n, m = 0;;
-int x1[100], x2[100], arr[100];
+int x1[100], x2[100], arr[200];
 
 int main() {
     cin >> n;

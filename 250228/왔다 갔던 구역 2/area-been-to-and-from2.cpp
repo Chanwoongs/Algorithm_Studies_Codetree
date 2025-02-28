@@ -3,8 +3,6 @@
 
 using namespace std;
 
-const int offset = 1000;
-
 int num, res = 0;
 char c;
 int n;
@@ -35,7 +33,7 @@ int main()
 
         if (com[i].second == 'R')
         {
-            for (int j = pos; j < pos + move; j++)
+            for (int j = pos + 1; j <= pos + move; j++)
             {
                 v[j]++;
             }
@@ -43,7 +41,7 @@ int main()
         }
         else
         {
-            for (int j = pos; j > pos - move; j--)
+            for (int j = pos - 1; j >= pos - move; j--)
             {
                 v[j]++;
             }

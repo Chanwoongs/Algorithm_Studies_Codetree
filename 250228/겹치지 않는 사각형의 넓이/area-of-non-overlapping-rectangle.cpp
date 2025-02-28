@@ -43,9 +43,9 @@ int main()
         }
     }
 
-    for (int j = 0; j < offset + 4; j++)
+    for (int j = 0; j < offset * 2 + 4; j++)
     {
-        for (int k = 0; k < offset + 4; k++)
+        for (int k = 0; k < offset * 2 + 4; k++)
         {
             if (arr[j][k] ==  1)
             {

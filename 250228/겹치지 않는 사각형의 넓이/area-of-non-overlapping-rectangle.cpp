@@ -13,6 +13,11 @@ int main()
     for (int i = 0; i < 2; i++)
     {
         cin >> x1 >> y1 >> x2 >> y2;
+        
+        x1 += offset;
+        y1 += offset;
+        x2 += offset;
+        y2 += offset;
 
         for (int j = y1; j < y2; j++)
         {
@@ -24,6 +29,11 @@ int main()
     }
 
     cin >> x1 >> y1 >> x2 >> y2;
+    
+    x1 += offset;
+    y1 += offset;
+    x2 += offset;
+    y2 += offset;
 
     for (int j = y1; j < y2; j++)
     {

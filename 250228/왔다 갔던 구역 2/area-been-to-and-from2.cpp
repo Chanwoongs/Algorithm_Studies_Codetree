@@ -3,49 +3,48 @@
 
 using namespace std;
 
-int num, res = 0;
+int n, num, res = 0;
 char c;
-int n;
-vector<int> v;
-vector<pair<int, char>> com;
+vector<int> v, x1, x2;
 
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(0);
-    cout.tie(0);
-
     cin >> n;
-    v.resize(3000);
-    com.resize(n);
 
+    v.resize(3000);
+    x1.resize(3000);
+    x2.resize(3000);
+
+    int cur = 1500;
     for (int i = 0; i < n; i++)
     {
         cin >> num >> c;
-        com[i].first = num;
-        com[i].second = c;
-    }
 
-    int pos = 1500;
-    for (int i = 0; i < com.size(); i++)
-    {
-        int move = com[i].first;
-
-        if (com[i].second == 'R')
+        if (c == 'R')
         {
-            for (int j = pos + 1; j <= pos + move; j++)
-            {
-                v[j]++;
-            }
-            pos += move;
+            int dest = cur + num;
+
+            x1[i] = cur;
+            x2[i] = dest;
+
+            cur = dest;
         }
         else
         {
-            for (int j = pos - 1; j >= pos - move; j--)
-            {
-                v[j]++;
-            }
-            pos -= move;
+            int dest = cur - num;
+
+            x1[i] = dest;
+            x2[i] = cur;
+
+            cur = dest;
+        }       
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = x1[i]; j < x2[i]; j++)
+        {
+            v[j]++;
         }
     }
 
